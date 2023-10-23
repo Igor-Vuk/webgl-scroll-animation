@@ -1,0 +1,21 @@
+{
+  "name": "threejs-journey-exercise",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "host": "vite --host",
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "lil-gui": "^0.18.2",
+    "prettier": "^2.5.1",
+    "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "gsap": "^3.12.2",
+    "three": "^0.157.0"
+  }
+}
