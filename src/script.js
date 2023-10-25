@@ -20,9 +20,6 @@ const canvas = document.querySelector("canvas.webgl")
 
 const scene = new THREE.Scene()
 
-const axisHelper = new THREE.AxesHelper(3.5)
-scene.add(axisHelper)
-
 /**
  * Sizes
  */
@@ -43,10 +40,13 @@ const material = new THREE.MeshToonMaterial({
 })
 
 /* -------------------------------------------------Mesh-------------------------------------------------------- */
-const mesh1 = new THREE.Mesh(new THREE.TorusGeometry(1, 0.4, 16, 60), material)
-const mesh2 = new THREE.Mesh(new THREE.ConeGeometry(1, 2, 32), material)
+const mesh1 = new THREE.Mesh(
+  new THREE.TorusGeometry(0.5, 0.2, 16, 60),
+  material
+)
+const mesh2 = new THREE.Mesh(new THREE.ConeGeometry(0.5, 1, 32), material)
 const mesh3 = new THREE.Mesh(
-  new THREE.TorusKnotGeometry(0.8, 0.35, 100, 16),
+  new THREE.TorusKnotGeometry(0.4, 0.15, 100, 16),
   material
 )
 
